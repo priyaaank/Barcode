@@ -10,7 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110623010148) do
+ActiveRecord::Schema.define(:version => 20110623011250) do
+
+  create_table "rooms", :force => true do |t|
+    t.string "name", :limit => 100
+  end
 
   create_table "users", :force => true do |t|
     t.string "first_name", :limit => 100
