@@ -4,6 +4,7 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'json'
+gem 'jquery-rails'
 
 group :development, :test do
   gem "rspec-rails", ">= 2.1.0"
