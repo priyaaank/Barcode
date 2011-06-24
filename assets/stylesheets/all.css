@@ -1,0 +1,136 @@
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #303030;
+    font: 14px/1.7 Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+
+
+a {
+  text-decoration: underline;
+  color: #1F80A9;
+}
+
+
+.container {
+  width: 100%;
+}
+
+.container.topbar {
+  padding: 10px 0;
+  background: #303030;
+  color: #fff;
+}
+
+.container.topbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.container.topbar .wrapper {
+  text-align: right;
+}
+
+.wrapper, header, footer {
+    margin: 0 auto;
+    width: 978px;
+}
+
+.container.header {
+    background: none repeat scroll 0 0 #D1E9F3;
+    height: 340px;
+}
+
+header.home {
+    background-position: center top;
+}
+
+.padding {
+    padding: 50px 0;
+}
+
+.logo.home {
+    margin-right: 5px;
+    width: 570px;
+}
+
+.logo {
+    float: left;
+    width: 386px;
+}
+
+.intro {
+    float: right;
+    margin-top: 15px;
+    width: 390px;
+}
+
+.feature.chat {
+  background-image: url("../images/chat.png");
+}
+
+.feature.transcript {
+  background-image: url("../images/briefcase.png");
+}
+
+.feature.easy {
+  background-image: url("../images/thumbsup.png");
+}
+
+.feature.groupchat {
+  background-image: url("../images/users.png");
+}
+
+.even {
+  margin-right: 80px;
+}
+
+.feature {
+    background: none no-repeat scroll 0 0 transparent;
+    float: left;
+    margin-top: 25px;
+    padding-left: 60px;
+    width: 360px;
+}
+
+
+p {
+    margin-bottom: 15px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.tk-droid-serif, h1, h2, h3, h4 {
+    font-family: "droid-serif-1","droid-serif-2","Georgia",serif;
+}
+
+.tk-droid-serif, h1, h2, h3, h4 {
+    font-family: "droid-serif-1","droid-serif-2","Georgia",serif;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.scheme h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+
