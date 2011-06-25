@@ -8,7 +8,7 @@ $(function() {
 $(document).ready(function() {
   
   fetch_messages = function() {
-    $.get("http://localhost:3000/rooms/1/chats/1.js", null, null, "script");
+    $.get("http://bar-code.heroku.com/rooms/1/chats/1.js", null, null, "script");
   }
 
   $("#refresh_button").click(function() {
