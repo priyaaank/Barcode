@@ -1,0 +1,12 @@
+%html
+  %head
+    %title Pipe
+    = stylesheet_link_tag "style"
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+
+  %body
+    #main
+      = render 'shared/topbar'
+      = render 'shared/content'
+      = render 'shared/footer'
