@@ -1,9 +1,6 @@
 .container.topbar
   .wrapper
     Ready to do some damage? 
-    %a{:title => "Sign in", :href => ""}
-      Sign In
+    = link_to "Sign in", new_user_session_path
     or
-    %a{:title => "Sign up", :href => ""}
-      Sign up
-
+    = link_to "Sign up", new_user_registration_path

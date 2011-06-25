@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'json'
 gem 'jquery-rails'
 gem 'haml'
+gem 'devise'
 
 group :development, :test do
   gem "rspec-rails", ">= 2.1.0"

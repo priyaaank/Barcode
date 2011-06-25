@@ -13,15 +13,26 @@
 ActiveRecord::Schema.define(:version => 20110623011250) do
 
   create_table "rooms", :force => true do |t|
-    t.string "name", :limit => 100
+    t.string   "name",       :limit => 100
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
-    t.string "first_name", :limit => 100
-    t.string "last_name",  :limit => 100
-    t.string "username",   :limit => 100
-    t.string "password",   :limit => 100
-    t.string "email",      :limit => 100
+    t.string   "first_name",           :limit => 100
+    t.string   "last_name",            :limit => 100
+    t.string   "password",             :limit => 100
+    t.string   "email",                               :default => "", :null => false
+    t.integer  "sign_in_count",                       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.datetime "remember_created_at"
+    t.string   "authentication_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
