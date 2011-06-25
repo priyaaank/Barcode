@@ -1,4 +1,4 @@
-Pipe::Application.routes.draw do
+Barcode::Application.routes.draw do
   devise_for :users
 
   #match 'room/:id/chat' => "chats#index"

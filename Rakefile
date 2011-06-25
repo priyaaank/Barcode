@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Pipe::Application.load_tasks
+Barcode::Application.load_tasks
