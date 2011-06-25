@@ -1,5 +1,11 @@
 Pipe::Application.routes.draw do
   devise_for :users
+
+  #match 'room/:id/chat' => "chats#index"
+  resources :rooms do
+    resources :chats
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

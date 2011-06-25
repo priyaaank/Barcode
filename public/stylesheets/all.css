@@ -58,6 +58,25 @@ header.home {
     width: 386px;
 }
 
+.message {
+  margin-top: 2px;
+}
+
+.message .block {
+  background: none repeat scroll 0 0 #D1E9F3;
+  width: 70%;
+}
+
+.message .sender {
+  float: left;
+  width: 100px;
+}
+
+.message .text {
+  width: 60%;
+  float: left;
+}
+
 .intro {
     float: right;
     margin-top: 15px;
