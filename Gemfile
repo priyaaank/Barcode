@@ -7,6 +7,7 @@ gem 'json'
 gem 'jquery-rails'
 gem 'haml'
 gem 'devise'
+gem 'rake', "0.8.7"
 
 group :development, :test do
   gem "rspec-rails", ">= 2.1.0"
