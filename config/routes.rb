@@ -3,7 +3,7 @@ Barcode::Application.routes.draw do
 
   #match 'room/:id/chat' => "chats#index"
   resources :rooms do
-    resources :chats
+    resources :messages
   end
 
   # The priority is based upon order of creation:

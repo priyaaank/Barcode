@@ -6,13 +6,36 @@ $(function() {
 });
 
 $(document).ready(function() {
-  
-  fetch_messages = function() {
-    $.get("http://bar-code.heroku.com/rooms/1/chats/1.js", null, null, "script");
-  }
 
+
+  //BEGIN of message object
+
+  messages = {
+
+    fetch: function() {
+      $.get("http://localhost:3000/rooms/1/messages/1.js", null, null, "script");
+    },
+
+    send: function(url, data) {
+      $.post(url, data, this.success);
+    },
+
+    success: function(data) {
+    },
+  };
+ 
   $("#refresh_button").click(function() {
-    fetch_messages();
+    messages.fetch();
   });
+
+
+  //END of message object
+
+
+  $("#message_box").submit(function() {
+    messages.send($(this).attr("action"), $(this).serialize());
+    return false;
+  });
+
 
 });

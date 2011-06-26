@@ -1,0 +1,15 @@
+#chat-area
+  - @messages.each do |message|
+  - user = message.user
+    = render 'message', :sender => "#{user.email}", :text => "#{message.text}"
+- form_tag room_messages_path, :method => "post", :id => "message_box" do
+  %fieldset
+    %li
+      = text_area_tag 'message'
+    %li
+      = submit_tag 'Send', :id => "send_message"
+
+
+%button{:id => "refresh_button"}
+  Refresh
+
