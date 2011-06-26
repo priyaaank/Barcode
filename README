@@ -1,1 +1,6 @@
+* Add a Jquery template engine to ensure that we are manipulating dom in jquery abd that processing is delegated to client side.
+* Add specs for all the classes.
+* Try faye as mounted rack app on heroku, before we deploy it on aws
+* Convery existing js code in views to more of a ajax head pattern and return only json responses from controllers
+* Ensure that we send a json redirect response when user is not logged in. And json should have a global callback to handle the response.
 
