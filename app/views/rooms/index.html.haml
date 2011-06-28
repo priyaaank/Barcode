@@ -1,0 +1,5 @@
+.h3 Room List
+- @rooms.each do |current_room|
+  = render 'room', :room => current_room
+
+= link_to "Create New", new_room_path

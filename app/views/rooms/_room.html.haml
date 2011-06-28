@@ -1,0 +1,11 @@
+.message
+  .block
+    .sender
+      %h6
+        = room.name
+    .text
+      %h6
+        = room.user.email
+    .controls
+      %h5
+        = link_to "Enter", room_messages_path(room.id)

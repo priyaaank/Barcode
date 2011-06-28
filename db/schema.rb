@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110626023325) do
 
   create_table "rooms", :force => true do |t|
     t.string   "name",       :limit => 100
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

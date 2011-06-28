@@ -6,5 +6,6 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
 
   has_many :messages
+  has_many :rooms
     
 end
